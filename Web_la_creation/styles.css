@@ -1,3 +1,7 @@
+body
+{
+font-family;
+}
 .carousel-item img
 {
     filter: blur(3px);
@@ -26,15 +30,6 @@
   white-space: nowrap;
 }
 
-.scroll .row .col-xl-3 {
-    display: inline-block;
-    float:none;
-}
-.scroll .row .col-sm-6 {
-    display: inline-block;
-    float:none;
-}
-
 .sale img
 {
  width:100%;
@@ -61,8 +56,8 @@
 
 .grey
 {
-    background-color: rgb(194, 194, 194);
-    height: 100%;
+    background-color: rgb(237, 237, 237);
+    height: 300px;
     width: 100%;
 }
 .grey-edge
@@ -70,4 +65,35 @@
     
     margin-right: 0px !important; 
     height: 300px;
+}
+.cart
+{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(209, 209, 209);
+}
+.cart-btn
+{
+    margin-top: 3%;
+    margin-left: 43%;
+}
+
+.check-out
+{
+    position: absolute;
+    bottom: 60%;
+    left: 72%;
+    right: 5%;
+    text-align: center;
+}
+.card-title
+{
+    text-align: left;
+}
+.card-text
+{
+    text-align: left;
 }

@@ -9,17 +9,11 @@
   <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-  <script src='main.js'></script>
-  <script src="https://kit.fontawesome.com/6b6d68c243.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./index.html">
         <img src="images/SwiftBuy-1.png" alt="Bootstrap" width="250" height="240">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
@@ -35,7 +29,7 @@
         <div>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/cart.html">
+              <a class="nav-link" aria-current="page" href="./cart.html">
                 <i class="fa-solid fa-cart-shopping fa-xl"></i></a>
             </li>
             <li class="nav-item dropdown">
@@ -90,83 +84,109 @@
     </button>
   </div>
   <div class="trend">
-    <h1>Trending</h1>
+    <hr>
+    <h1 class="center">Trending</h1>
+    <hr>
   </div>
   <div class="row scroll">
     <div class="col-xl-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card" id="item1" style="width: 18rem;">
         <img src="https://source.unsplash.com/random/1800x1000/?shoe" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Add to cart</a>
+          <p class="card-text">₹1299</p>
+          <a onclick="addToCart(this.id)" class="btn btn-primary">Add to cart</a>
         </div>
       </div>
     </div>
     <div class="col-xl-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card" id="item2" style="width: 18rem;">
         <img src="https://source.unsplash.com/random/1800x1000/?shoe" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Add to cart</a>
+          <p class="card-text">₹3199</p>
+          <a onclick="addToCart(this.id)" class="btn btn-primary">Add to cart</a>
         </div>
       </div>
     </div>
     <div class="col-xl-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card" id="item3" style="width: 18rem;">
         <img src="https://source.unsplash.com/random/1800x1000/?shoe" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Add to cart</a>
+          <p class="card-text">₹1099</p>
+          <a onclick="addToCart(this.id)" class="btn btn-primary">Add to cart</a>
         </div>
       </div>
     </div>
     <div class="col-xl-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card" id="item4" style="width: 18rem;">
         <img src="https://source.unsplash.com/random/1800x1000/?shoe" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Add to cart</a>
+          <p class="card-text">₹999</p>
+          <a onclick="addToCart(this.id)" class="btn btn-primary">Add to cart</a>
         </div>
       </div>
     </div>
     <div class="col-xl-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card" id="item5" style="width: 18rem;">
         <img src="https://source.unsplash.com/random/1800x1000/?shoe" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Add to cart</a>
+          <p class="card-text">₹599</p>
+          <a onclick="addToCart(this.id)" class="btn btn-primary">Add to cart</a>
         </div>
       </div>
     </div>
-    </div>
+  </div>
   </div>
   <div class="sale">
     <a><img src="images/sale banner.jpg" alt="sale"></a>
   </div>
 
+  <div class="container-fluid text-center cart">
+    <div class="row">
+      <div class="col-xl-4 col-sm-2 col-2">
+        <h1>Cart</h1>
+      </div>
+      <div class="col-xl-4 col-sm-3 col-4">
+        <h1>4 Items</h1>
+      </div>
+      <div class="col-xl-1 col-sm-2 col-1">
+        <h1>₹100</h1>
+      </div>
+      <div class="col-xl-3 col-sm-4 col-5">
+        <a class="btn btn-primary cart-btn" href="./cart.html" role="button">Go to Cart</a>
+      </div>
+    </div>
+  </div>
 
 
   <div class="container">
     <i class="fa-solid fa-info info"></i>
-    <p class="mb-0 text-muted about border-top">At SwiftBuy, we believe in making shopping swift, seamless, and enjoyable. As an innovative e-commerce platform, we are dedicated to providing you with an unparalleled online shopping experience. Our mission is to bring convenience and efficiency to your fingertips, making your shopping journey as swift as possible.</p>
+    <p class="mb-0 text-muted about border-top">At SwiftBuy, we believe in making shopping swift, seamless, and
+      enjoyable. As an innovative e-commerce platform, we are dedicated to providing you with an unparalleled online
+      shopping experience. Our mission is to bring convenience and efficiency to your fingertips, making your shopping
+      journey as swift as possible.</p>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
-  
-      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap" />
+        </svg>
       </a>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous" async></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src='main.js' async></script>
+  <script src="https://kit.fontawesome.com/6b6d68c243.js" crossorigin="anonymous" async></script>
+
 </body>
 
 </html>
