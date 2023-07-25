@@ -1,0 +1,21 @@
+.carousel-item img
+{
+    filter: blur(3px);
+}
+.navbar-brand
+{
+    position:relative;
+    right:30px;
+    bottom:85px;
+    height:75px;
+}
+
+.carousel-caption
+{
+    
+    @media (max-width: 767px) 
+    {  
+        position:absolute;
+        top:40%;
+    }
+}
