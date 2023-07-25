@@ -19,3 +19,18 @@
         top:40%;
     }
 }
+
+.scroll .row
+{
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scroll .row .col-xl-3 {
+    display: inline-block;
+    float:none;
+}
+.scroll .row .col-sm-6 {
+    display: inline-block;
+    float:none;
+}
