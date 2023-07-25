@@ -58,3 +58,16 @@
 {
     text-align: center;
 }
+
+.grey
+{
+    background-color: rgb(194, 194, 194);
+    height: 100%;
+    width: 100%;
+}
+.grey-edge
+{
+    
+    margin-right: 0px !important; 
+    height: 300px;
+}
