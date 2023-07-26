@@ -54,7 +54,7 @@
 .grey
 {
     background-color: rgb(237, 237, 237);
-    height: 300px;
+    height: 776px;
     width: 100%;
 }
 .grey-edge
@@ -71,6 +71,7 @@
     bottom: 0;
     left: 0;
     background-color: rgb(209, 209, 209);
+    z-index: 100;
 }
 .cart-btn
 {
@@ -80,10 +81,9 @@
 
 .check-out
 {
-    position: absolute;
-    bottom: 60%;
-    left: 72%;
-    right: 5%;
+    position: relative;
+    top: 30%;
+    left: 34%;
     text-align: center;
 }
 .card-title
@@ -93,4 +93,46 @@
 .card-text
 {
     text-align: left;
+}
+.products-container
+{
+    justify-content: space-around;
+    width:67.9%;
+
+
+}
+.products-container .fa-circle-xmark
+{
+    position: relative;
+    left: 20px;
+    top: 30%;
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+}
+.product-row
+{
+    padding: 0 0 0 0 !important;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    background-color: rgb(237, 237, 237);
+    height: 80px;
+    
+}
+
+.products-container img
+{
+    width: 30%;
+}
+
+.total
+{
+    position: relative;
+    top: 50px;
+}
+
+.card-img-top
+{
+    object-fit: cover;
+    height: 200px;
 }
