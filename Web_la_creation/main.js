@@ -141,7 +141,7 @@ function displayCart() {
             <div class="row product-row">
             <div class="product col-4">
                 
-                <img src="./images/${item.tag}.jpg">
+                <img class="pro-img" src="./images/${item.tag}.jpg">
                 <span>${item.name}</span>
             </div>
             <div class="price col-3">₹${item.price}</div>
