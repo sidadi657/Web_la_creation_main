@@ -1,191 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/SwiftBuy-1.png" alt="Bootstrap" width="250" height="240">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#Categories">Categories</a>
-              </li>
-            </ul>
-            <div>
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="/cart.html">
-                    <i class="fa-solid fa-cart-shopping fa-xl"></i></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <i class="fa-solid fa-user fa-xl"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Login</a></li>
-                    <li><a class="dropdown-item" href="#">Signup</a></li>
-                  </ul>
-            </div>
-          </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img class="brand-img" src="images/SwiftBuy-1.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#Categories">Categories</a>
+          </li>
+        </ul>
+        <a class="cat" href="fashion_sub.html"><i class="fa-solid fa-shirt"></i>Fashion</a>
+        <br>
+        <a class="cat" href="tech_sub.html"><i class="fa-solid fa-headphones"></i>Electronics</a>
+        <br>
+        <a class="cat" href="sneakers_sub.html"><i class="fa-solid fa-shoe-prints"></i>Sneakers</a>
+        <br>
+        <a class="cat" href="perfumes_sub.html"><i class="fa-solid fa-spray-can-sparkles"></i></i>Perfumes</a>
+        <br>
+        <div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./cart.html">
+                <i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-user fa-xl"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Login</a></li>
+
+              </ul>
         </div>
-      </nav>
-<!-- nav bar ends     -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/nikewhiteshoes.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h1>Shoes</h1>
-              <p>Get upto 50 percent off on Sneakers</p>
-            </div>
-          </div>
-        </div>
+
+      </div>
     </div>
-    <!-- creating 4 cards -->
-    <!-- 1st card stats -->
-    <div class="row scroll">
-        <div class="col-xl-3 col-sm-6">
-          <div class="card" style="width: 18rem;">
-            <img src="images/nike1.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"> Nike Shoes</h5>
-              <span>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </span>
-              <b> 5678 Ratings </b>
-              <p><b>₹666</b></p>
-              <p class="card-text">Nike Orignal Shoes</p>
-              <a class="btn btn-primary add-cart">Add to cart</a>
-            </div>
-          </div>
+  </nav>
+  <!-- nav bar ends     -->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/adidas.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h1>Shoes</h1>
+          <p>Get upto 50 percent off on Sneakers</p>
         </div>
-        <!-- 1st card ends -->
-        <!-- 2nd cards begains -->
-        <div class="col-xl-3 col-sm-6">
-          <div class="card" style="width: 18rem;">
-            <img src="images/adidas1.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Adidas Shoes</h5>
-              <span>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </span>
-              <b> 5678 Ratings </b>
-              <p><b>₹299</b></p>
-              <p class="card-text">Adidas Orignal Shoes</p>
-              <a class="btn btn-primary add-cart">Add to cart</a>
-            </div>
-          </div>
+      </div>
+    </div>
+  </div>
+  <!-- creating 4 cards -->
+  <!-- 1st card stats -->
+  <div class="row scroll">
+    <!-- 1st card ends -->
+    <!-- 2nd cards begains -->
+    <div class="col-xl-3 col-sm-6">
+      <div class="card" style="width: 18rem;">
+        <img src="images/adidas.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Adidas Shoes</h5>
+          <span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <b> 5678 Ratings </b>
+          <p><b>₹2099</b></p>
+          <p class="card-text">Adidas Orignal Shoes</p>
+          <a class="btn btn-primary add-cart">Add to cart</a>
         </div>
-        <!-- 2nd card ends -->
-        <!-- 3rd card begains -->
-        <div class="col-xl-3 col-sm-6">
-          <div class="card" style="width: 18rem;">
-            <img src="images/puma.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              
-              <h5 class="card-title">Puma Shoes</h5>
-              <span>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </span>
-              <b> 1020 Ratings</b>
-              <p><b>₹199</b></p>
-              <p class="card-text">Puma Orignal Shoes </p>
-              
-              <a class="btn btn-primary add-cart">Add to cart</a>
-            </div>
-          </div>
+      </div>
+    </div>
+    <!-- 2nd card ends -->
+    <!-- 3rd card begains -->
+    <div class="col-xl-3 col-sm-6">
+      <div class="card" style="width: 18rem;">
+        <img src="images/pumawomens.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+
+          <h5 class="card-title">Puma Womens Shoes</h5>
+          <span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <b> 1020 Ratings</b>
+          <p><b>₹1999</b></p>
+          <p class="card-text">Puma Orignal Shoes </p>
+
+          <a class="btn btn-primary add-cart">Add to cart</a>
         </div>
-        <!-- 3rd card ends -->
-        <!-- 4th card starts -->
-        <div class="col-xl-3 col-sm-6">
-          <div class="card" style="width: 18rem;">
-            <img src="images/formal1.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Formal Shoes</h5>
-             <span>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star-half-stroke"></i>
-             </span>
-             <b> 2103 Ratings</b>
-             <p><b>₹99</b></p>
-              <p class="card-text">100% Geniune Formal Shoes </p>
-              <a class="btn btn-primary add-cart">Add to cart</a>
-            </div>
-          </div>
+      </div>
+    </div>
+    <!-- 3rd card ends -->
+
+    <div class="col-xl-3 col-sm-6">
+      <div class="card" id="item4" style="width: 18rem;">
+        <img src=".\images\nikewhiteshoes.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Nike White shoes</h5>
+          <span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <b> 5678 Ratings </b>
+          <p class="card-text">₹999</p>
+          <a class="btn btn-primary add-cart">Add to cart</a>
         </div>
-        <div class="container-fluid text-center cart" id="cart">
-          <div class="row">
-            <div class="col-xl-4 col-sm-2 col-2">
-              <h1>Cart</h1>
-            </div>
-            <div class="col-xl-4 col-sm-3 col-4 item-no">
-              <h1><span>0</span> Items</h1>
-            </div>
-            <div class="col-xl-1 col-sm-2 col-1 cost">
-              <h1><span>0</span></h1>
-            </div>
-            <div class="col-xl-3 col-sm-4 col-5">
-              <a class="btn btn-primary cart-btn" href="./cart.html" role="button">Go to Cart</a>
-            </div>
-          </div>
+      </div>
+    </div>
+
+
+    <!-- 4th card starts -->
+    <div class="col-xl-3 col-sm-6">
+      <div class="card" style="width: 18rem;">
+        <img src="images/blackberryformalshoes.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> Blackberry Formal Shoes</h5>
+          <span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </span>
+          <b> 2103 Ratings</b>
+          <p><b>₹3999</b></p>
+          <p class="card-text">100% Geniune Leather</p>
+          <a class="btn btn-primary add-cart">Add to cart</a>
         </div>
-        <div class="container">
-          <i class="fa-solid fa-info info"></i>
-          <p class="mb-0 text-muted about border-top">At SwiftBuy, we believe in making shopping swift, seamless, and
-            enjoyable. As an innovative e-commerce platform, we are dedicated to providing you with an unparalleled online
-            shopping experience. Our mission is to bring convenience and efficiency to your fingertips, making your shopping
-            journey as swift as possible.</p>
-          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
-      
-            <a href="/"
-              class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-              <svg class="bi me-2" width="40" height="32">
-                <use xlink:href="#bootstrap" />
-              </svg>
-            </a>
-          </footer>
+      </div>
+    </div>
+    <div class="container-fluid text-center cart" id="cart">
+      <div class="row">
+        <div class="col-xl-4 col-sm-2 col-2">
+          <h1>Cart</h1>
         </div>
-          <!-- 4th card ends -->
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-          crossorigin="anonymous" async></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-        <script src='main.js' async></script>
-        <script src="https://kit.fontawesome.com/6b6d68c243.js" crossorigin="anonymous" async></script>
+        <div class="col-xl-4 col-sm-3 col-4 item-no">
+          <h1><span>0</span> Items</h1>
+        </div>
+        <div class="col-xl-1 col-sm-2 col-1 cost">
+          <h1><span>0</span></h1>
+        </div>
+        <div class="col-xl-3 col-sm-4 col-5">
+          <a class="btn btn-primary cart-btn" href="./cart.html" role="button">Go to Cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <i class="fa-solid fa-info info"></i>
+      <p class="mb-0 text-muted about border-top">At SwiftBuy, we believe in making shopping swift, seamless, and
+        enjoyable. As an innovative e-commerce platform, we are dedicated to providing you with an unparalleled online
+        shopping experience. Our mission is to bring convenience and efficiency to your fingertips, making your shopping
+        journey as swift as possible.</p>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">&copy; 2023 SwiftBuy</p>
+
+        <a href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+      </footer>
+    </div>
+    <!-- 4th card ends -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
+      async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src='main.js' async></script>
+    <script src="https://kit.fontawesome.com/6b6d68c243.js" crossorigin="anonymous" async></script>
 </body>
+
 </html>

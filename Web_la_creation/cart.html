@@ -9,16 +9,21 @@
   <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html">
-        <img src="images/SwiftBuy-1.png" alt="Bootstrap" width="250" height="240">
+        <img class="brand-img" src="images/SwiftBuy-1.png" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,6 +35,14 @@
             <a class="nav-link" href="index.html#Categories">Categories</a>
           </li>
         </ul>
+        <a class="cat" href="fashion_sub.html"><i class="fa-solid fa-shirt"></i>Fashion</a>
+        <br>
+        <a class="cat" href="tech_sub.html"><i class="fa-solid fa-headphones"></i>Electronics</a>
+        <br>
+        <a class="cat" href="sneakers_sub.html"><i class="fa-solid fa-shoe-prints"></i>Sneakers</a>
+        <br>
+        <a class="cat" href="perfumes_sub.html"><i class="fa-solid fa-spray-can-sparkles"></i></i>Perfumes</a>
+        <br>
         <div>
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -43,9 +56,10 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Login</a></li>
-                <li><a class="dropdown-item" href="#">Signup</a></li>
+
               </ul>
         </div>
+
       </div>
     </div>
   </nav>
@@ -54,10 +68,7 @@
     <div class="row ">
       <div class="col-8" style="background-color: rgb(237, 237, 237);">
         <div class="row">
-          <div class="col-1">
-            Item
-          </div>
-          <div class="col-3">
+          <div class="col-4">
             Item
           </div>
           <div class="col-3">
@@ -71,49 +82,23 @@
           </div>
         </div>
         <hr>
-        
+
       </div>
-      <div class="col-4 total" >
+      <div class="col-4 total">
         <h1>Total</h1>
         <h2></h2>
       </div>
     </div>
     <div class="products-container">
-      <div class="products" >
-        
+      <div class="products">
+
       </div>
-      
+
     </div>
+    <button type="button" class="btn btn-dark clear-cart" onclick="clearCart()">Clear Cart</button>
+    <a type="button" class="btn btn-dark check-out" href="check_out.html" onclick="clearCart()">Check Out</a>
 
-    <button type="button" class="btn btn-dark check-out">Check Out</button>
-    
   </div>
-
-
-
-
-
-
-
-
-
-  <!-- <div class="container footer">
-    <i class="fa-solid fa-info info"></i>
-    <p class="mb-0 text-muted about border-top">At SwiftBuy, we believe in making shopping swift, seamless, and
-      enjoyable. As an innovative e-commerce platform, we are dedicated to providing you with an unparalleled online
-      shopping experience. Our mission is to bring convenience and efficiency to your fingertips, making your shopping
-      journey as swift as possible.</p>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
-
-      <a href="/"
-        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32">
-          <use xlink:href="#bootstrap" />
-        </svg>
-      </a>
-    </footer>
-  </div> -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

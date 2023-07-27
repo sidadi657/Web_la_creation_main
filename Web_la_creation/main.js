@@ -1,6 +1,4 @@
 let carts = document.querySelectorAll(".add-cart");
-
-
 let products = [{
     name: "",
     tag: "",
@@ -8,8 +6,13 @@ let products = [{
     incart: 0
 },
 ]
+function clearCart() {
+    localStorage.clear();
+    location.reload();
 
-let productNumbers=0;
+}
+
+let productNumbers = 0;
 for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
         let exist = 0;
@@ -35,18 +38,20 @@ for (let i = 0; i < carts.length; i++) {
 
         cartNumbers(products[i]);
         totalCost(products[i]);
-        
+
     })
 }
 function onLoadCartNo() {
     let productNumbers = localStorage.getItem('cartNumbers');
-    let cartCost=localStorage.getItem("totalCost");
-    if(cartCost)
-    {
-        if ( document.URL.includes("cart.html") ) {
-            document.querySelector('.total h2').textContent = "₹"+parseInt(cartCost);
+    let cartCost = localStorage.getItem("totalCost");
+    if (cartCost) {
+        if (document.URL.includes("cart.html")) {
+            document.querySelector('.total h2').textContent = "₹" + parseInt(cartCost);
         }
-        document.querySelector('.cost span').textContent = "₹"+parseInt(cartCost);
+
+        document.querySelector('.cost span').textContent = "₹" + parseInt(cartCost);
+
+
     }
     if (productNumbers) {
         document.querySelector('.item-no span').textContent = productNumbers;
@@ -61,7 +66,7 @@ function onLoadCartNo() {
 function cartNumbers(product) {
 
     productNumbers = localStorage.getItem('cartNumbers');
-    
+
     productNumbers = parseInt(productNumbers);
     if (productNumbers) {
         localStorage.setItem('cartNumbers', productNumbers + 1);
@@ -77,9 +82,9 @@ function cartNumbers(product) {
     else {
         document.getElementById("cart").style.visibility = "hidden";
     }
- 
-    
-    
+
+
+
 }
 
 function setItems(product) {
@@ -87,13 +92,13 @@ function setItems(product) {
     cartItems = JSON.parse(cartItems);
     if (cartItems != null) {
 
-        if(cartItems [product.tag] == undefined) {
+        if (cartItems[product.tag] == undefined) {
             cartItems = {
-            ...cartItems,
-            [product.tag]: product
+                ...cartItems,
+                [product.tag]: product
             }
         }
-        
+
         cartItems[product.tag].incart += 1;
     }
     else {
@@ -107,40 +112,34 @@ function setItems(product) {
 
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
-function totalCost(product)
-{
-    product.price=parseInt(product.price);
-    let cartCost=localStorage.getItem("totalCost");
-    if(cartCost!=null)
-    {
-        cartCost=parseInt(cartCost)+product.price;
+function totalCost(product) {
+    product.price = parseInt(product.price);
+    let cartCost = localStorage.getItem("totalCost");
+    if (cartCost != null) {
+        cartCost = parseInt(cartCost) + product.price;
         localStorage.setItem("totalCost", parseInt(cartCost));
     }
-    else
-    {
-        cartCost=product.price;
+    else {
+        cartCost = product.price;
         localStorage.setItem("totalCost", parseInt(cartCost));
     }
-    document.querySelector('.cost span').textContent = "₹"+parseInt(cartCost);
+    document.querySelector('.cost span').textContent = "₹" + parseInt(cartCost);
     console.log(cartCost);
     console.log(typeof product.price);
-    document.querySelector('.total h2').textContent = "₹"+parseInt(cartCost);
+    document.querySelector('.total h2').textContent = "₹" + parseInt(cartCost);
 
 }
 
-function displayCart()
-{
+function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
-    cartItems=JSON.parse(cartItems);
-    let productContainer=document.querySelector(".products");
-    if(cartItems && productContainer)
-    {
-        productContainer.innerHTML='';
-        Object.values(cartItems).map(item =>{
-            productContainer.innerHTML +=`
+    cartItems = JSON.parse(cartItems);
+    let productContainer = document.querySelector(".products");
+    if (cartItems && productContainer) {
+        productContainer.innerHTML = '';
+        Object.values(cartItems).map(item => {
+            productContainer.innerHTML += `
             <div class="row product-row">
-            <i class="fa-solid fa-circle-xmark col-1"></i>
-            <div class="product col-3">
+            <div class="product col-4">
                 
                 <img src="./images/${item.tag}.jpg">
                 <span>${item.name}</span>
@@ -151,11 +150,11 @@ function displayCart()
             ${item.incart}
             
             </div>
-            <div class="price col-3">₹${item.incart*item.price}</div>
+            <div class="price col-3">₹${item.incart * item.price}</div>
             </div>
             `
         });
-        
+
     }
 }
 displayCart();
